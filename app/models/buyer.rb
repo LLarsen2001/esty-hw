@@ -3,8 +3,8 @@ class Buyer < ApplicationRecord
   serialize :desired_categories, Array
 
 
-  # def yo
-  # self.desired_categories.join('-')
-  # end
+  def yo
+  self.desired_categories.join('-')
+  end
 
 end

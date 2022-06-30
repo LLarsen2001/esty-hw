@@ -7,6 +7,7 @@ const ProductsTable = ({ products }) => (
             <Table.Row>
                 <Table.HeaderCell>Price</Table.HeaderCell>
                 <Table.HeaderCell>description</Table.HeaderCell>
+                <Table.HeaderCell>Category</Table.HeaderCell>
 
             </Table.Row>
         </Table.Header>
@@ -16,6 +17,7 @@ const ProductsTable = ({ products }) => (
                     <Table.Row key={p.id}>
                         <Table.Cell>{p.price}</Table.Cell>
                         <Table.Cell>{p.description}</Table.Cell>
+                        <Table.Cell>{p.category}</Table.Cell>
                     </Table.Row>
                 )
             })}
