@@ -14,5 +14,12 @@ class Product < ApplicationRecord
       c.category 
     end
   end
+
+  def self.by_category(category)
+    Product.find_by_sql(["SELECT p.price, p.description, p.seller_id, p.category, p.id
+    FROM products AS p
+    WHERE LOWER(p.category)= ?", category])
+  end
+
 end
 
