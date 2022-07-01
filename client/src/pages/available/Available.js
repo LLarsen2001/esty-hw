@@ -53,7 +53,7 @@ const Available = () => {
         <div>
             <h2>Seller and ther Products</h2>
             {renderSellerProducts()}
-            <p>{JSON.stringify(normalizeData)}</p>
+            <p>{JSON.stringify({ normalizeData })}</p>
         </div>
     );
 };

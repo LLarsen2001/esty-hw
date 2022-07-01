@@ -18,13 +18,13 @@ categories = [
     ]
 
 
-    10.times do
+    20.times do
     s = Seller.create(
       name: Faker::Name.name,
       email: Faker::Internet.email,
      
     )
-        5.times do
+        10.times do
         num_categories = rand(0..categories.length - 1);
         Buyer.create(
           name: Faker::Name.name,
@@ -33,7 +33,7 @@ categories = [
           seller_id: s.id
         )
     end
-        5.times do
+        10.times do
            p = Product.create(
             price: rand(99000..1500000),
             description: Faker::Quote.famous_last_words,
