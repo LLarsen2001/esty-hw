@@ -13,6 +13,8 @@ import { normalize } from 'styled-normalize'
 import { createGlobalStyle } from "styled-components";
 import Available from "./pages/available/Available";
 import { Container } from "semantic-ui-react";
+import Categories from "./pages/Categories/Categories";
+import Buyers from "./pages/buyers/Buyers";
 
 const GlobalStyle = createGlobalStyle`
    ${normalize}
@@ -31,6 +33,8 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/available" element={<Available />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/buyers" element={<Buyers />} />
             <Route path="/hooks" element={<Hooks />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />

@@ -30,12 +30,18 @@ const Navbar = () => {
     return (
         <>
             <nav>
-                <ul>
+                <ul style={{ display: 'flex' }}>
                     <Link to="/">
                         <li>Home</li>
                     </Link>
                     <Link to="/available">
                         <li>Available</li>
+                    </Link>
+                    <Link to="/categories">
+                        <li>Categories</li>
+                    </Link>
+                    <Link to="/buyers">
+                        <li>Buyers</li>
                     </Link>
                     <Link to="/hooks">
                         <li>Hooks</li>
