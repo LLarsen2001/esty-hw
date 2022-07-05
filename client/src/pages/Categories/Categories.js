@@ -16,6 +16,8 @@ const Categories = () => {
         }
     }
 
+
+
     const renderSelect = () => {
         if (!categories) {
             return (< Select
@@ -50,6 +52,8 @@ const Categories = () => {
             )
         })
     }
+
+
 
     return (
         <div>
